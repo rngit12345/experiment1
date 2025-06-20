@@ -1,7 +1,9 @@
 import pickle
 import os
 
-savedir = './results/' # Dont change since actions yaml has same directory mentioned to upload into the repo
+# savedir is uploaded to Github pages by manually triggering a Github action. This becomes the root directory of the Github page
+# So, the uploaded savefile can be downloaded by anyone as https://rngit12345.github.io/experiment1/values.pkl
+savedir = './results/' # Dont change since actions yaml has same directory name mentioned to upload into the repo
 savefile = 'values.pkl'
 
 a = [1,2,3,4]
