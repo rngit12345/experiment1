@@ -24,7 +24,7 @@ jobs:
 
       - name: Run your script
         run: |
-          python your_script.py  # Make sure it writes to results/
+          python main.py  # Make sure it writes to results/
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
