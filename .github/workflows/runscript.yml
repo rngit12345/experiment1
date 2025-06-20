@@ -17,3 +17,9 @@ jobs:
 
       - name: Run script
         run: python main.py
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-results
+          path: results/  # Match the directory your script wrote to
