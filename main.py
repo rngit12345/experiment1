@@ -12,7 +12,7 @@ for val in a:
 
 # Saving
 print('Saving a values ...')
-if not os.path.exists(savedir+savefile):
+if not os.path.exists(savedir):
     os.makedirs(savedir+savefile)
 with open(savedir+savefile, 'wb') as f:
     pickle.dump(a, f)
