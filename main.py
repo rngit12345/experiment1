@@ -1,4 +1,5 @@
 import pickle
+import os
 
 savedir = './results/'
 savefile = 'values.pkl'
@@ -10,6 +11,8 @@ for val in a:
 	print(val)
 
 # Saving
+if not os.path.exists(savedir+savefile):
+    os.makedirs(savedir+savefile)
 with open(savedir+savefile, 'wb') as f:
     pickle.dump(a, f)
 
