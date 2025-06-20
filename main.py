@@ -11,12 +11,14 @@ for val in a:
 	print(val)
 
 # Saving
+print('Saving a values ...')
 if not os.path.exists(savedir+savefile):
     os.makedirs(savedir+savefile)
 with open(savedir+savefile, 'wb') as f:
     pickle.dump(a, f)
 
 # Loading
+print('Reading a values ...')
 with open(savedir+savefile, 'rb') as f:
     b = pickle.load(f)
 
