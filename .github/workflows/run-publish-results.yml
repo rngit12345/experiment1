@@ -29,7 +29,7 @@ jobs:
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: results/ # Everything in this folder, including subfolders are uploaded to Github page, with the page root being this directory
+          path: results/ # Everything in this folder, including subfolders are uploaded to Github page https://rngit12345.github.io/experiment1/, with the page root being this directory
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
